@@ -1,0 +1,24 @@
+{
+  "name": "puckpanelrewrite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "cookie": "^0.4.1",
+    "discord-oauth2": "^2.7.0",
+    "discord-oauth2-api": "^1.1.1",
+    "discord.js": "^12.5.3",
+    "express": "^4.17.1",
+    "express-device": "^0.4.2",
+    "express-ws": "^5.0.2",
+    "keygen": "^0.3.1",
+    "speakeasy": "^2.0.0"
+  }
+}

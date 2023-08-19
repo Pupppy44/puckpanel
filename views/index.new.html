@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Account</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.kirb.xyz/assets/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.0/css/ionicons.min.css">
+    
+    <style>
+      ::-webkit-scrollbar {
+  width: 7.5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(254,250,250,1) 0%, rgba(215,215,215,1) 100%);
+}
+        .features-clean {
+  color: #313437;
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+
+@media (max-width:767px) {
+  .features-clean {
+    padding-bottom: 10px;
+  }
+}
+
+.features-clean p {
+  color: #7d8285;
+}
+
+.features-clean h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+@media (max-width:767px) {
+  .features-clean h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.features-clean .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 60px;
+}
+
+@media (max-width:767px) {
+  .features-clean .intro {
+    margin-bottom: 40px;
+  }
+}
+
+.features-clean .item {
+  min-height: 100px;
+  padding-left: 80px;
+  margin-bottom: 40px;
+}
+
+@media (max-width:767px) {
+  .features-clean .item {
+    min-height: 0;
+  }
+}
+
+.features-clean .item .name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: inherit;
+}
+
+.features-clean .item .description {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.features-clean .item .icon {
+  font-size: 40px;
+  color: green;
+  float: left;
+  margin-left: -65px;
+}
+        
+        .highlight-clean {
+  color: #313437;
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.highlight-clean p {
+  color: #7d8285;
+}
+
+.highlight-clean h2 {
+  font-weight: bold;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  padding-top: 0;
+  margin-top: 0;
+  color: inherit;
+}
+
+.highlight-clean .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 25px;
+}
+
+.highlight-clean .buttons {
+  text-align: center;
+}
+
+.highlight-clean .buttons .btn {
+  padding: 16px 32px;
+  margin: 6px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  outline: none;
+  background-color: #ddd;
+}
+
+.highlight-clean .buttons .btn:hover {
+  opacity: 1;
+}
+
+.highlight-clean .buttons .btn:active {
+  transform: translateY(1px);
+}
+
+.highlight-clean .buttons .btn-primary {
+  background-color: #055ada;
+  color: #fff;
+}
+        
+        .article-list {
+  color: #313437;
+  background-color: #fff;
+}
+
+.article-list p {
+  color: #7d8285;
+}
+
+.article-list h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+@media (max-width:767px) {
+  .article-list h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.article-list .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.article-list .intro p {
+  margin-bottom: 0;
+}
+
+.article-list .articles {
+  padding-bottom: 40px;
+}
+
+.article-list .item {
+  padding-top: 50px;
+  min-height: 425px;
+  text-align: center;
+}
+
+.article-list .item .name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+  color: inherit;
+}
+
+.article-list .item .description {
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.article-list .item .action {
+  font-size: 24px;
+  width: 24px;
+  margin: 22px auto 0;
+  line-height: 1;
+  display: block;
+  color: #4f86c3;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+  text-decoration: none;
+}
+
+.article-list .item .action:hover {
+  opacity: 1;
+}
+
+        .footer-basic {
+  padding: 40px 0;
+  background-color: #303030;
+  color: #ffff;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+
+
+    </style>
+</head>
+
+<body style="background-color: #e0e0e0;">
+    <nav class="navbar navbar-dark navbar-expand-md navigation-clean-button" style="background-color: #303030;">
+        <div class="container"><a class="navbar-brand" href="#">Puck</a><a class="nav-link" href="#" style="color: #dfe8ee;">Home</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Servers</a></li>
+                </ul><span class="navbar-text actions"><a class="btn btn-dark action-button" role="button" href="#" style="background-color: #68A063;">Sign In</a></span>
+            </div>
+        </div>
+    </nav>
+    <div class="highlight-clean" style="background-color: #e0e0e0;">
+        <div class="container">
+            <div class="intro" style="margin: 0 auto 0px;">
+                <h2 class="text-center" style="margin-bottom: 0px;">About</h2>
+                <br><br>
+                <p class="text-center" style="font-size: 20px; color: black;">Simple password management for your precious passwords. Store them in a secure database so you never lose it.</p>
+            </div>
+        </div>
+    </div>
+    <div class="features-clean" style="background-color: #e0e0e0;">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center" style="padding-top: 0px;">Features</h2>
+        </div>
+        <div class="row features">
+            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-database icon"></i>
+                <h3 class="name">Store your passwords</h3>
+                <p class="description">Store your passwords in a secure database so you never lose them. No more writing down or remembering passwords.</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-key icon"></i>
+                <h3 class="name">One password for all</h3>
+                <p class="description">Use a master password to access all your passwords. That's a single password for all of them.</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-lock icon"></i>
+                <h3 class="name">Secure encryption</h3>
+                <p class="description">Passwords are encrypted with the AES-256 algorithm, ensuring that your passwords are only visible by you.</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-undo-alt icon"></i>
+                <h3 class="name">Generate strong passwords</h3>
+                <p class="description">Generate strong passwords for your websites to protect yourself from hacking.</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-file icon"></i>
+                <h3 class="name">Store more than passwords</h3>
+                <p class="description">Store important information, documents, and more. We'll encrypt them to keep them safe.</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-handshake icon"></i>
+                <h3 class="name">You can trust us</h3>
+                <p class="description">Nobody, not even us, except you can see your passwords. You can trust us with them.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <section class="article-list" style="background-color: #e0e0e0;">
+        <div class="container">
+            <div class="intro" >
+                <h2 class="text-center" style="padding-top: 0px; margin-bottom: 0px;">Plans</h2>
+            </div>
+            <div class="row articles">
+                <div class="col-sm-6 col-md-4 item">
+                </div>
+                <div class="col-sm-6 col-md-4 item" style="padding-top: 20px;"><a href="#"><i class="fas fa-user fa-4x" style="color: green;"></i></a>
+                    <h3 class="name">Personal</h3>
+                    <p class="description">This plan is for indivituals who would like to try our service. Sign up today, no cost.</p><br><button class="btn btn-primary" style="background-color: #68A063; border-color: #68A063;" type="button">Sign Up</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-basic">
+        <div class="social"><a href="//twitter.com/Pupppy44"><i class="icon ion-social-twitter"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            <li class="list-inline-item"><a href="#">Contact Us</a></li>
+        </ul>
+        <p class="copyright">by Kirb#0046</p>
+    </footer>
+    <script src="https:////cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
