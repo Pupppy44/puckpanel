@@ -24,12 +24,6 @@ var sessions = [];
 var oauths = [];
 var clients = [];
 
-app.ws("/api/v3/ios_auth/gateway", function(ws, request) {
-
-});
-
-app.get("/api/v3/ios_auth")
-
 app.get("/api/v3/remote_auth/start", function(request, response) {
   response.cookie("Remote_Auth", request.query.code);
 
